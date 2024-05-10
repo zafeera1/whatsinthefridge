@@ -1,0 +1,115 @@
+* {
+    font-family: "Yeseva One", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(255, 255, 255);
+  }
+  
+  #nav-li {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    flex-direction: row;
+    font-size: 1.2em;
+  }
+  
+  .lg-su {
+    display: inline;
+    padding: 0em 5em 0em 5em;
+  }
+  
+  #landing-body {
+    background-image: url("./assets/Screenshot\ 2024-05-08\ at\ 7.10.00\ PM.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  #title {
+    margin: 0px;
+    transform: skew(-30deg, 0);
+    text-align: center;
+    font-size: 5.5em;
+  }
+  
+  #centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  #start {
+    background-color: transparent;
+    padding: 10px 20px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #main-body {
+     margin: 0;
+      padding: 0;
+      background-color: #f0f0f0; 
+    }
+  
+  .container {
+    border: 1px solid rgb(6, 73, 6); 
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px; 
+    background-color: #fff; 
+  }
+  
+  .header {
+    color: rgb(6, 76, 6);
+  }
+  
+  .long-input {
+    color: rgb(6, 76, 6);
+    width: 80%; 
+    padding: 10px; 
+    margin: 10px; 
+    border: 3px solid rgb(6, 76, 6); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px; 
+  }
+  
+  #header-display {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .btn {
+    background-color: transparent;
+    padding: 8px 15px;
+    color: rgb(6, 76, 6);
+    border: 2px solid rgb(6, 76, 6);
+    border-radius: 20px;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+  .delete-button {
+    padding: 2px 5px; 
+    color: rgb(6, 76, 6); 
+    background-color: white;
+    border: 2px solid rgb(6, 76, 6);
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute; 
+    top: -10px; 
+    right: -10px; 
+  }
+  
+  .ingredient-item {
+    padding: 8px 15px;
+    color: rgb(6, 76, 6);
+    border: 2px solid rgb(6, 76, 6);
+    border-radius: 20px;
+    display: inline-block;
+    margin: 5px;
+    position: relative; 
+  }
