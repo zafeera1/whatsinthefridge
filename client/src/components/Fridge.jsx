@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+
 import '../styles/style.css';
 
 function Fridge() {
@@ -9,6 +10,7 @@ function Fridge() {
         const savedItems = JSON.parse(localStorage.getItem('fridgeItems'));
         if (savedItems) {
             setFridgeItems(savedItems);
+            updateSavedIngredients(savedItems);
         }
     }, []);
 
@@ -22,6 +24,7 @@ function Fridge() {
             setFridgeItems([...fridgeItems, newItem]);
             setInputValue('');
             localStorage.setItem('fridgeItems', JSON.stringify([...fridgeItems, newItem]));
+            updateSavedIngredients([...fridgeItemsm, newItem]);
         }
     }
     return (
