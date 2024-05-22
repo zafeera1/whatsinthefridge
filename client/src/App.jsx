@@ -1,28 +1,23 @@
 import React from 'react';
-import './styles/style.css'; 
+import { Outlet } from 'react-router-dom';
+import './index.css';
 import Header from './components/Header';
-import Fridge from './components/Fridge';
-import Recipes from './components/Recipes';
-import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
+import Nav from './components/Nav';
+import Footer from './components/Footer';
 
-const client = new ApolloClient({
-    uri: 'http://localhost:3001/graphql', 
-    cache: new InMemoryCache(),
-  });
-function App() {
-    return (
-        <div className="container">
-            <Header />
-            <div className="row">
-                <div className="col-md-6">
-                    <Fridge />
-                </div>
-                <div className="col-md-6">
-                    <Recipes />
-                </div>
-            </div>
-        </div>
-    );
-}
+const App = () => {
+  return (
+    <div className="layout">
+      <header className="header">
+        <Header />
+        <Nav />
+      </header>
+      <div id="content">
+        <Outlet />
+      </div>
+      <Footer />
+    </div>
+  );
+};
 
 export default App;
